@@ -1,0 +1,28 @@
+# Welcome to Crazyflie Pizza, the following explains inputs to the program.
+
+# These comments you're reading, starting with '#', shall be removed from mission file.
+# A mission file is coded in the following json format:
+
+{
+    "mission_id": 42,      # fun debug parameter, can be random but good to have
+    "pilot_name": "Sully", # fun debug parameter, every drone needs a pilot
+
+    # uniform resource identifier, radio address to connect to the drone
+    "drone_uri": "radio://0/80/2M/E7E7E7E7E7",
+    # initial pose (approx) of the drone, a list [x, y, z, rx, ry, rz] in cm and deg, resp.
+    "init_pose": [40, 40, 20, 0, 0, 60],
+    # flight and hover altitude the drone will try to maintain in m
+    "flight_altitude": 0.4,
+    # speed of drone displacements in m/s
+    "cruise_speed": 0.3,
+
+    # rectangular world dimensions, a list [width, height] in cm
+    "world_dim": [500, 300],
+    # distance to maintain with surrounding obstacles in the plane in m
+    "safety_distance": 0.3,
+
+    #! additional dictionary of flight settings we can add later
+    "mission_settings": {
+        "param": "default value"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "drone_uri": "radio://0/80/2M/E7E7E7E702",
+    "init_pose": [4, 1, 0, 0, 0, 0],
+    "flight_altitude": 0.4,
+    "takeoff_speed": 0.2,
+    "cruise_speed": 0.1,
+    "centering_speed": 0.15,
+
+    "world_dimensions": [5, 3],
+    "nav_settings": {
+        "home_area": [0, 0, 1.5, 3],
+        "food_area": [3.5, 0, 5, 3]
+    },
+    "tile_size": 0.05,
+    "platform_size": 0.3,
+
+    "label_update_period" : 50,
+    "controller_update_period" : 100,
+
+    "mission_settings": {
+        "placeholder": 0
+    }
+}
